@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Essentia Care Studio</title>
+  <meta name="description" content="Essentia Care Studio: reserva tu experiencia, WhatsApp y redes." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <!-- Background decor -->
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="gridlines"></div>
+  </div>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-mini" href="#top">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Essentia Care Studio</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#reservar">Reservar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-left reveal">
+        <!-- Logo grande y notable -->
+        <div class="logo-frame">
+          <img class="logo" src="logo.png" alt="Logo Essentia Care Studio">
+        </div>
+
+        <h1>
+          Bienestar y belleza con
+          <span class="accent">experiencia premium</span>
+        </h1>
+
+        <p class="subtitle">
+          Reserva en segundos, escríbenos por WhatsApp o mira nuestras redes.
+          Atención en Quito • Av. Vaca de Castro y Pedro de Mendoza.
+        </p>
+
+        <div class="cta" id="reservar">
+          <a class="btn primary ripple"
+             href="https://essentiastudio.zohobookings.com/#/estetica"
+             target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">📅</span>
+            <span>Reserva tu experiencia</span>
+          </a>
+
+          <a class="btn secondary ripple"
+             href="https://wa.me/593983100091?text=Hola%20Essentia%20Care%20Studio%20✨%20Quiero%20información%20y%20reservar%20una%20cita."
+             target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">💬</span>
+            <span>Escríbenos por WhatsApp</span>
+          </a>
+
+          <a class="btn tertiary ripple"
+             href="https://linktr.ee/essentiacarestudio"
+             target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">🌿</span>
+            <span>Nuestra Social Media</span>
+          </a>
+        </div>
+
+        <div class="badges">
+          <span class="badge">✨ Atención con cita</span>
+          <span class="badge">💚 Trato personalizado</span>
+          <span class="badge">📍 Quito</span>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="panel reveal" style="animation-delay:120ms">
+          <h2>¿Cómo reservar?</h2>
+          <ol class="steps">
+            <li><strong>Elige Cita Programada</strong></li>
+            <li>Selecciona fecha y hora</li>
+            <li>Confirma tu cita</li>
+          </ol>
+
+          <div class="panel-cta">
+            <a class="btn primary ripple"
+               href="https://essentiastudio.zohobookings.com/#/estetica"
+               target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">⚡</span>
+              <span>Ir a reservas</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="contacto" class="panel soft reveal" style="animation-delay:190ms">
+          <h2>Atención rápida</h2>
+          <p class="muted">
+            Para dudas o disponibilidad inmediata, WhatsApp es lo más rápido.
+          </p>
+
+          <div class="panel-cta">
+            <a class="btn secondary ripple"
+               href="https://wa.me/593983100091?text=Hola%20Essentia%20Care%20Studio%20✨%20Quiero%20información%20y%20reservar%20una%20cita."
+               target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">💬</span>
+              <span>Abrir WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="section-head reveal">
+        <h2>Servicios</h2>
+        <p class="muted">Diseñados para que te sientas renovad@ desde el primer minuto.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <h3>SPA & Relajación</h3>
+          <p class="muted">Masajes, aromaterapia y rituales de bienestar.</p>
+        </article>
+
+        <article class="card reveal" style="animation-delay:40ms">
+          <h3>Facial</h3>
+          <p class="muted">Limpieza, hidratación y glow según tu piel.</p>
+        </article>
+
+        <article class="card reveal" style="animation-delay:80ms">
+          <h3>Corporal</h3>
+          <p class="muted">Tratamientos y protocolos personalizados.</p>
+        </article>
+
+        <article class="card reveal" style="animation-delay:120ms">
+          <h3>Uñas</h3>
+          <p class="muted">Manicure, pedicure y diseños prolijos.</p>
+        </article>
+
+        <article class="card reveal" style="animation-delay:160ms">
+          <h3>Pestañas</h3>
+          <p class="muted">Extensiones y lifting con diseño a tu estilo.</p>
+        </article>
+
+        <article class="card reveal" style="animation-delay:200ms">
+          <h3>Cejas</h3>
+          <p class="muted">Diseño, perfilado y acabado natural.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> Essentia Care Studio</p>
+        <p class="muted">Quito • Av. Vaca de Castro y Pedro de Mendoza</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
